@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MXkdKYtWAXk=",
+  "dgSpecHash": "RwTTJEMlyig=",
   "success": true,
   "projectFilePath": "/Users/ojemba/Desktop/ojemba work/GameStore/GameStore.Api/GameStore.Api.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/ojemba/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/ojemba/.nuget/packages/minimalapis.extensions/0.11.0/minimalapis.extensions.0.11.0.nupkg.sha512",
+    "/Users/ojemba/.nuget/packages/minivalidation/0.8.0/minivalidation.0.8.0.nupkg.sha512"
+  ],
   "logs": []
 }

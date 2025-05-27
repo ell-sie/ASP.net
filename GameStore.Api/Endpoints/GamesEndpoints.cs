@@ -40,6 +40,10 @@ public static class GamesEndpoints
 
         group.MapPost("/", (CreateGameDto newGame) =>
         {
+            if (string.IsNullOrEmpty(newGame.Name))
+            {
+                return Results.BadRequest("Name is required");
+            }
             GameDto game = new(
                 games.Count + 1,
                 newGame.Name,
@@ -51,7 +55,7 @@ public static class GamesEndpoints
             games.Add(game);
 
             return Results.CreatedAtRoute(GetGameRouteName, new { id = game.Id }, game);
-        });
+        }).WithParameterValidation();
 
         group.MapPut("/{id}", (int id, UpdateGameDto updatedGame) =>
         {
