@@ -1,29 +1,29 @@
 GET http://localhost:5266/games
 
 ###
-GET http://localhost:5266/games/4
+GET http://localhost:5266/games/1
 
 ###
 POST http://localhost:5266/games
 Content-Type: application/json
 
 {
-  "name": "Final Fantasy XIV",
-  "genreId": 2,
-  "price": 59.99,
-  "releaseDate": "2010-09-30"
+    "name": "Minecraft",
+    "genreId": 5,
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
 }
 
 ###
-PUT http://localhost:5266/games/1
+PUT http://localhost:5266/games/2
 Content-Type: application/json
 
 {
-  "name": "The Last of Us Part II Turbo",
-  "genre": "Action-adventure",
-  "price": 39.99,
-  "releaseDate": "2020-06-19"
+  "name": "Street Fighter II Turbo",
+  "genreId": 1,
+  "price": 19.99,
+  "releaseDate": "1991-02-01"
 }
 
 ###
-DELETE http://localhost:5266/games/1
+DELETE http://localhost:5266/games/4
